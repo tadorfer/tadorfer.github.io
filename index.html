@@ -3,16 +3,20 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
     <title>Thomas Dorfer | About me</title>
 </head>
 <body>
-  <ul class="nav">
-    <li><a href="#">ABOUT ME</a></li>
-    <li><a href="nlprot.html">NLPROT</a></li>
-    <li><a href="https://github.com/tadorfer" target="_blank">GITHUB</a></li>
-    <li><a href="https://www.linkedin.com/in/thomasdorfer/" target="_blank">LINKEDIN</a></li>
-    <li><a href="https://twitter.com/ThomasADorfer" target="_blank">TWITTER</a></li>
+  <ul class="nav" id="myTopnav">
+    <a href="#" class="active">ABOUT ME</a>
+    <a href="nlprot.html">NLPROT</a>
+    <a href="https://github.com/tadorfer" target="_blank">GITHUB</a>
+    <a href="https://www.linkedin.com/in/thomasdorfer/" target="_blank">LINKEDIN</a>
+    <a href="https://twitter.com/ThomasADorfer" target="_blank">TWITTER</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </ul>
     <div class="column-header">
          <h1 id="header">Thomas Dorfer</h1>
@@ -25,32 +29,33 @@
                 <br>
                 <div style="position: absolute; left: 50%;">
                   <div style="position: relative; left: -50%;">
-                    <img class="center" src="IMG_0939.jpg" alt="Profile Picture" style="width:235px; height: 250px; box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2); border-radius: 50%;">
+                    <img class="center" src="imgs/IMG_0939.jpg" alt="Profile Picture" style="width:235px; height: 250px; box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2); border-radius: 50%;">
                   </div>
                 </div> 
             </div>
             <div class="card">
                 <h3 id="subheader"></h3>
-                <p id="para">I'm a data scientist at Molcure Inc. in Tokyo, Japan. My primary interests lie in machine learning and protein modeling, particularly 
+                <p id="para">I'm a data scientist at Molcure Inc. in Tokyo, Japan, with training in neuroscience. My primary interests lie in machine learning and protein modeling, particularly 
                   the use of natural language processing to decipher the hidden grammar of protein sequences.
                 </p>
             </div> 
             <div class="card"> 
                       
-              <h2 style="font-family: arial;">Conference Papers</h3>
-              <br>
+              <h2 style="font-family: arial;">My Work</h3>
+              
+              <h3 style="margin-top: 40px; margin-bottom: 30px; color: rgb(119, 115, 115)">Conference Papers</h3>
               <p id="para"><b>Dorfer TA</b>, Robinson CN, Cocchi L, Mattingley JB, Sale MV, Zalesky A, Gollo LL.
                           Whole-brain network states predict behavioral responses to transcranial magnetic stimulation.
-                          <i>Imaging@Brisbane</i>, Brisbane, August 2018.</p>
+                          <i>Imaging@Brisbane</i>, Brisbane, August 2018. <a href="papers/ImagingBrisbane_2018.pdf" target="_blank">[PDF]</a></p>
               <p id="para">Pater MRA, <b>Dorfer TA</b>, Gschwind L, Coynel D, Papassotiropoulos A, de Quervain DJ, Luksys G.
                           Predicting Human Memory Performance through Multi-Voxel Pattern Analysis.
-                          <i>Federation of European Neuroscience Societies</i>, Berlin, July 2018.</p>
+                          <i>Federation of European Neuroscience Societies</i>, Berlin, July 2018. <a href="papers/FENS_2018.pdf" target="_blank">[PDF]</a></p>
               <p id="para"><b>Dorfer TA</b>, Roberts JA, Breakspear M, Gollo LL.
                           Slow oscillatory brain activity renders convolution with the hemodynamic response function redundant.
-                          <i>Organization for Human Brain Mapping</i>, Singapore, June 2018.</p>
+                          <i>Organization for Human Brain Mapping</i>, Singapore, June 2018. <a href="papers/OHBM_2018_1.pdf" target="_blank">[PDF]</a></p>
               <p id="para"><b>Dorfer TA</b>, Pater M, Gschwind L, Papassotiropoulos A, de Quervain DJ, Luksys G.
                           FMRI-based prediction models for free recall, recognition memory, emotional valences, arousal, and memorability of pictures.
-                          <i>Organization for Human Brain Mapping</i>, Singapore, June 2018.</p>
+                          <i>Organization for Human Brain Mapping</i>, Singapore, June 2018. <a href="papers/OHBM_2018_2.pdf" target="_blank">[PDF]</a></p>
               <p id="para">Gollo LL, Cocchi L, Hearne L, <b>Dorfer TA</b>, Roberts J, Breakspear M.
                           Can we predict the intensity of the effects of brain stimulation?
                           <i>Organization for Human Brain Mapping</i>, Singapore, June 2018.</p>
@@ -61,5 +66,15 @@
     <footer>
         <p style="margin: 0; position:absolute; top:50%; left:50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">Thomas Dorfer | dorfer@molcure.io</p>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+    </script>
 </body>
 </html>
