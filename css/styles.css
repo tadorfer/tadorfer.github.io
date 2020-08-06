@@ -14,36 +14,6 @@ body{
         overflow-y: scroll;
     }
 
-.fa {
-padding: 20px;
-font-size: 30px;
-width: 50px;
-text-align: center;
-text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-opacity: 0.7;
-}
-
-/* Twitter */
-.fa-twitter {
-background: #55ACEE;
-color: white;
-}
-
-.fa-linkedin {
-background: #007bb5;
-color: white;
-}
-
-.fa-github {
-background: #55ACEE;
-color: white;
-}
-
-
 .modebar-contained {display: none;}
 
 /* Add a black background color to the top navigation */
