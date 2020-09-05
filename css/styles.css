@@ -124,7 +124,7 @@ body{
 
 .midcolumn{
           overflow: hidden;
-          width: 900px;
+          width: 910px;
           margin-bottom: 100px;
           background-color: white;
           z-index: 3;
@@ -159,6 +159,62 @@ body{
            display: table;
            clear: both;
            }
+
+.middle {
+        text-align: center;
+}
+
+.button {
+        border: none;
+        border-radius: 20px;
+        padding: 6px 14px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 4px 5px;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-bottom: 30px;
+}
+
+.button a, .button-inline a {
+        color: white;
+        text-decoration: none;
+}
+
+.button:hover, .button-inline:hover {
+        opacity: 0.6;
+        } 
+
+.button-inline {
+        border: none;
+        border-radius: 20px;
+        padding: 4px 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        margin: 0;
+}
+
+.github {
+        background-color: #211f1f; 
+}
+
+.linkedin {
+        background-color: #0e76a8;
+}
+
+.twitter {
+        background-color: #00acee;
+}
+
+.pdf {
+        background-color: #f40f02;
+        opacity: 0.8;
+}
 
 #para   {
         color: #3c4043;
