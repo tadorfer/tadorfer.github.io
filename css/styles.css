@@ -218,8 +218,8 @@ body{
 }
 
 .pdf {
-        background-color: #f40f02;
-        opacity: 0.8;
+        background-color: gray;
+        opacity: .9;
 }
 
 #para   {
