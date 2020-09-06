@@ -24,6 +24,11 @@ body{
         margin:0;
         padding:10px 0px 10px 0px;
         text-align:center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        overflow: hidden;
+        z-index: 5;
     }
 
 .nav li {
@@ -147,11 +152,12 @@ body{
         }
 
 .column-header  {
-                height: auto;
-                float: left;
-                width: 100%;
-                background-color: white;
-                border-bottom: 1px solid #737a80;
+        margin-top: 57px;
+        height: auto;
+        float: left;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid #737a80;
                 }
 
 .row-header:after {
