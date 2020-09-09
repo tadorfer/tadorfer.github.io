@@ -217,6 +217,10 @@ body{
         background-color: #00acee;
 }
 
+.sourcerer {
+        background-color: #00e7aa;
+}
+
 .pdf {
         background-color: gray;
         opacity: .9;
